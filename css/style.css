@@ -1,0 +1,580 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  position: relative;
+}
+.fondo {
+  width: 100%;
+}
+header {
+  /* background-color: rgba(241, 228, 255, 1); */
+  background-color: rgb(247, 228, 255);
+  width: 100%;
+  min-height: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  /* column-gap: 500px; */
+}
+.nav-bar {
+  display: flex;
+  font-size: 30px;
+  justify-content: end;
+  flex-wrap: nowrap;
+  flex-grow: 2;
+}
+.nav-bar ul li {
+  list-style: none;
+  display: inline-flex;
+  text-align: center;
+  /* font-family: 'Manrope', sans-serif;
+  color:  rgba(140, 48, 245, 1); */
+}
+
+.title-sec {
+  background-image: url("../assets/fondo-nuevo.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 174px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.title-sec h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 2.5em;
+  margin: 0px 20px;
+  color: rgb(247, 228, 255);
+  transition: all 1s;
+}
+.title-sec h1:hover {
+  color: chocolate;
+  -webkit-text-stroke: 0.5px black;
+}
+.lista li a {
+  text-decoration: none;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: "Manrope", sans-serif;
+  color: rgba(140, 48, 245, 1);
+  transition: all 0.5s;
+}
+.lista li a:hover {
+  color: rgb(26, 22, 22);
+}
+main {
+  background-color: rgba(214, 177, 255, 1);
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+}
+.funcion {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: ". text-fun-1 text-fun-1 text-fun-2 text-fun-2 text-fun-3 text-fun-3 .";
+}
+.funcion div h2 {
+  padding: 20px;
+  align-items: center;
+  color: rgb(246, 244, 247);
+  /* -webkit-text-stroke: 0.5px rgb(221, 208, 208); */
+}
+/* .text-fun{
+  border-left: 1px solid  black;
+  padding: 10px;
+} */
+/* .text-fun img{
+  max-width: 150px;
+} */
+.text-fun-1 {
+  grid-area: text-fun-1;
+  border-right: 1px solid rgb(239, 199, 247);
+  padding-right: 10px;
+}
+.text-fun-2 {
+  grid-area: text-fun-2;
+  border-right: 1px solid rgb(239, 199, 247);
+  padding: 0px 10px;
+}
+.text-fun-3 {
+  grid-area: text-fun-3;
+  padding-left: 10px;
+}
+.producto {
+  display: flex;
+  flex-direction: column;
+}
+.producto h2 {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+/* .ejemplo-dibujo{
+    padding: 10px;
+    width: 20%;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    margin-left: 46%;
+    font-family: 'Manrope', sans-serif;
+} */
+.ejemplo {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+}
+.ejemplo-dibujo {
+  margin: 0px 20px;
+}
+.ejemplo-dibujo div img {
+  transition: all 0.5s;
+}
+.ejemplo-dibujo div img:hover {
+  transform: scale(1.1, 1.1);
+}
+button {
+  background-color: rgba(140, 48, 245, 1);
+  border: 1.5px solid transparent;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 5px;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+button:hover {
+  border-color: rgb(45, 31, 49);
+  color: black;
+}
+footer {
+  background-color: rgba(140, 48, 245, 1);
+  width: 100%;
+  height: 150px;
+  color: rgba(214, 177, 255);
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.redes {
+  display: flex;
+  padding-bottom: 10px;
+}
+.redes div a img {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+footer div h3 {
+  padding: 10px;
+}
+.footer-lista {
+  display: flex;
+  list-style: none;
+  text-align: center;
+}
+.footer-lista li a {
+  text-decoration: none;
+  padding-right: 50px;
+  padding-left: 50px;
+  color: white;
+  border-top: 1px solid rgba(214, 177, 255);
+}
+
+/* PRODUCTOS */
+
+.main-productos {
+  background-color: rgb(247, 228, 255);
+}
+
+.seccion-dibujo {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "dibujo dibujo dibujo . ."
+    ". . dibujo-1 dibujo-1 dibujo-1"
+    "dibujo-2 dibujo-2 dibujo-2 . ."
+    ". . dibujo-3 dibujo-3 dibujo-3";
+}
+.dibujo {
+  background-color: rgb(255, 177, 230);
+  height: 330px;
+  border: 1px solid chocolate;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 1%;
+  backdrop-filter: blur (10px);
+  grid-area: dibujo;
+  display: flex;
+}
+/* .dibujo:hover {
+  transform: skew(-20deg);
+} */
+.dibujo h3 {
+  font-family: "Manrope", sans-serif;
+}
+.dibujo p {
+  font-family: "Manrope", sans-serif;
+}
+.text-dibujo {
+  display: flex;
+  flex-direction: column;
+}
+.dibujo-1 {
+  background-color: rgb(255, 114, 210);
+  height: 330px;
+  border: 1px solid chocolate;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 1%;
+  backdrop-filter: blur (10px);
+  grid-area: dibujo-1;
+  display: flex;
+}
+/* .dibujo-1:hover {
+  transform: skew(20deg);
+} */
+.dibujo-2 {
+  background-color: rgb(242, 43, 178);
+  height: 330px;
+  border: 1px solid chocolate;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 1%;
+  backdrop-filter: blur (10px);
+  grid-area: dibujo-2;
+}
+/* .dibujo-2:hover {
+  transform: skew(-20deg);
+} */
+.dibujo-3 {
+  /* background-color: rgb(234, 170, 253); */
+  background-color: rgb(167, 38, 126);
+  height: 330px;
+  border: 1px solid chocolate;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 1%;
+  backdrop-filter: blur (10px);
+  grid-area: dibujo-3;
+}
+/* .dibujo-3:hover {
+  transform: skew(20deg);
+} */
+
+/* FAQ */
+
+.sec-faq div {
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+}
+.faq {
+  font-family: "Manrope", sans-serif;
+  padding: 20px;
+  text-align: center;
+  color: rgb(96, 34, 167);
+}
+.faq h3 {
+  padding-bottom: 10px;
+}
+
+/* CONTACTO */
+
+.contacto {
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+}
+.input-text {
+  padding-right: 284px;
+}
+textarea {
+  resize: none;
+}
+
+
+
+/* 
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: ". text-fun-1 text-fun-1 text-fun-2 text-fun-2 text-fun-3 text-fun-3 .";
+  }
+
+  
+} */
+
+@media (max-width: 576px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "text-fun-1"
+      "text-fun-2"
+      "text-fun-3";
+  }
+  .ejemplo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  .ejemplo-dibujo {
+    padding-bottom: 50px;
+  }
+  .ejemplo-dibujo div p {
+    padding: 10px;
+  }
+
+  .nav-bar ul li {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+    color: rgba(140, 48, 245, 1);
+  }
+  .footer-lista li a {
+    display: none;
+  }
+  footer div h3 {
+    border-top: 1px solid rgb(239, 199, 247);
+  }
+
+  /* PRODUCTOS */
+
+  .seccion-dibujo {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "dibujo"
+      "dibujo-1"
+      "dibujo-2"
+      "dibujo-3";
+  }
+
+  .dibujo {
+    background-color: rgb(255, 177, 230);
+    width: 500px;
+    height: 330px;
+    border: 1px solid chocolate;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1%;
+    backdrop-filter: blur (10px);
+    grid-area: dibujo;
+    display: flex;
+  }
+  .dibujo-1 {
+    background-color: rgb(255, 114, 210);
+    width: 500px;
+    height: 330px;
+    border: 1px solid chocolate;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1%;
+    backdrop-filter: blur (10px);
+    grid-area: dibujo-1;
+    display: flex;
+  }
+  .dibujo-2 {
+    background-color: rgb(255, 114, 210);
+    width: 500px;
+    height: 330px;
+    border: 1px solid chocolate;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1%;
+    backdrop-filter: blur (10px);
+    grid-area: dibujo-2;
+    display: flex;
+  }
+  .dibujo-3 {
+    background-color: rgb(255, 114, 210);
+    /* width: 500px;
+    height: 330px; */
+    border: 1px solid chocolate;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1%;
+    backdrop-filter: blur (10px);
+    grid-area: dibujo-3;
+    display: flex;
+  }
+
+  .dibujo:hover {
+    transform: none;
+  }
+
+  .dibujo-1:hover {
+    transform: none;
+  }
+
+  .dibujo-2:hover {
+    transform: none;
+  }
+
+  .dibujo-3:hover {
+    transform: none;
+  }
+
+  .dibujo div img, .dibujo-1 div img, .dibujo-2 div img, .dibujo-3 div img{
+    width: 200px;
+  }
+  
+}
+
+
+
+#menu,
+#menu-check {
+  display: none;
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+  /* PRODUCTOS */
+
+    .seccion-dibujo {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "dibujo"
+      "dibujo-1"
+      "dibujo-2"
+      "dibujo-3";
+  }
+
+  header .logo{
+    background-color: rgba(214, 177, 255, 1);
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid  rgba(140, 48, 245, 1);
+  }
+  header {
+    width: 100%;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: none;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+  }
+  header .menu-ham {
+    display: flex;
+    place-content: space-between;
+  }
+
+  #menu-check:not(:checked) ~ .nav-bar {
+    display: none;
+  }
+
+  #menu-check:checked ~ .nav-bar {
+    display: block;
+  }
+
+  #menu {
+    display: block;
+    color: rgba(140, 48, 245, 1);
+    background-color: transparent;
+    font-family: "Manrope", sans-serif;
+    /* margin-top: 5px; */
+    padding: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    /* border: 3px solid violet; */
+    border-radius: 0.3em;
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    z-index: 9999;
+    transition: all ease 1;
+  }
+
+  #menu:hover {
+    color: white;
+    /* background-color: violet; */
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Manrope", sans-serif;
+
+  }
+
+  #menu-cerrar {
+    display: none;
+  }
+
+  #menu-check:checked ~ label #menu-abrir {
+    display: none;
+  }
+
+  #menu-check:checked ~ label #menu-cerrar {
+    display: block;
+
+  }
+
+  header .menu-hamb .nav-bar {
+    /* position: absolute; */
+    top: 70px;
+    right: 0;
+    width: 100%;
+    /* height: 24%; */
+    background-color: transparent;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    /* padding-right: 2em; */
+    opacity: 0.8;
+    font-size: 1.4em;
+  }
+
+  header .menu-hamb .nav-bar ul li a {
+    font-family: "Manrope", sans-serif;
+    color: rgba(140, 48, 245, 1);
+    font-weight: bold;
+  }
+
+  header .menu-hamb .nav-bar ul,
+  header .menu-hamb .nav-bar ul li {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main {
+    text-align: center;
+  }
+  #servicios ul li {
+    width: 60%;
+  }
+}
