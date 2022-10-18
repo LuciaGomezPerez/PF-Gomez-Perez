@@ -18,20 +18,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" />
-
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <!-- logo -->
+    <header class="header-FAQ">
+        <!-- <div class="logo">
+            logo
             <a href="../index.html">
                 <img src="../assets/logonuevo.png" alt="" />
             </a>
-        </div>
+        </div> -->
+        <nav class="navbar navbar-expand-lg menuFlex index">
+            <div class="container-fluid">
+                <picture class="navbar-brand logo" href="../index.html">
+                    <img src="../assets/logonuevo.png" alt="" />
+                </picture>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./productos.html">PRODUCTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <!-- barra de navegador -->
-        <nav class="nav-bar">
+        <!-- <nav class="nav-bar">
             <ul class="lista">
                 <li>
                     <a href="../index.html">INICIO</a>
@@ -49,7 +81,7 @@
                     <a href="./contacto.html">CONTACTO</a>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
     <main>
         <section class="title-sec">
@@ -57,12 +89,124 @@
             <!-- banner -->
             <!-- <img class="fondo" src="../assets/fondo.png" alt="" /> -->
         </section>
-        <section class="sec-faq">
+        <section class="sec-faq container-fluid">
             <div>
-            <h1>¿Tienes preguntas?¡Aqui las despejamos!</h1>
-            <span>¿No parece la duda que tienes?¡Contactanos!</span>
+                <h1>¿Tienes preguntas?¡Aqui las despejamos!</h1>
+                <span>¿No parece la duda que tienes?¡Contactanos!</span>
             </div>
-            <div class="faq">
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            ¿Pasa despues de que elegi producto?¿Como doy detalles de lo que quiero?
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample" style="">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestias unde quod
+                            laudantium. Ab
+                            earum,
+                            voluptatibus quam perspiciatis laborum autem odit ullam facilis atque eligendi debitis natus
+                            aliquid
+                            illum
+                            architecto.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Que pasa si no me gusta el diseño que recibi y quiero cancelar mi compra?
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur veritatis corrupti et
+                            maiores
+                            laboriosam dignissimos eligendi, voluptates dicta obcaecati porro animi atque, voluptatibus
+                            fuga
+                            minima non distinctio sit facere totam?
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Que pasa si el artista no me entrega mi compra o sobrepasa el tiempo de entrega?
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti dolor cupiditate sit rem,
+                            amet
+                            atque repellendus magni vero excepturi natus, aliquid harum fugiat aperiam eveniet aliquam,
+                            nemo
+                            nulla labore illum.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            ¿Como recibiré mi pieza de arte?
+                        </button>
+                    </h3>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, vel. Odio aut tempora,
+                            libero
+                            facilis vero veniam animi adipisci aspernatur eligendi voluptas excepturi pariatur natus id
+                            voluptatum illum hic officia?
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            ¿Puedo pedir que se realicen cambios en mi comprar una vez que esta completa?
+                        </button>
+                    </h3>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non a, perspiciatis quidem modi
+                            illum
+                            itaque,
+                            officiis mollitia eveniet iusto ea corrupti numquam ad vitae quia debitis esse nobis
+                            necessitatibus
+                            provident.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            ¿Que medios de pago estan disponibles?
+                        </button>
+                    </h3>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rerum voluptates nihil?
+                            Laborum
+                            minima dicta asperiores. Culpa suscipit, nobis libero qui ad debitis ipsam nostrum voluptas
+                            architecto, aliquid delectus amet?
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="faq">
                 <h3>¿Pasa despues de que elegi producto?¿Como doy detalles de lo que quiero?</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestias unde quod laudantium. Ab
                     earum,
@@ -100,10 +244,10 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rerum voluptates nihil? Laborum
                     minima dicta asperiores. Culpa suscipit, nobis libero qui ad debitis ipsam nostrum voluptas
                     architecto, aliquid delectus amet?</p>
-            </div>
+            </div> -->
         </section>
     </main>
-    <footer>
+    <footer class="container-fluid">
         <!-- <div>
             <h3>© Coderhouse, Gómez Pérez Lucía</h3>
         </div> -->
@@ -148,6 +292,12 @@
             <h3>© Coderhouse, Gómez Pérez Lucía</h3>
         </div>
     </footer>
+
+    <!-- scripts -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

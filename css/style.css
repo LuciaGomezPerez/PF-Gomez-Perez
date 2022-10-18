@@ -4,21 +4,24 @@
   padding: 0;
 }
 
-body{
+body {
   position: relative;
 }
 .fondo {
   width: 100%;
 }
-header {
+.header-withoutboots {
   background-color: rgb(247, 228, 255);
   width: 100%;
   min-height: 110px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+}
+.header-FAQ {
+  background-color: rgb(247, 228, 255);
 }
 .nav-bar {
   display: flex;
@@ -27,6 +30,20 @@ header {
   flex-wrap: nowrap;
   flex-grow: 2;
 }
+.navbar-collapse {
+  flex-grow: unset;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: "Manrope", sans-serif;
+  color: rgba(140, 48, 245, 1);
+  font-weight: bold;
+}
+.navbar-nav {
+  align-items: center;
+}
+
 .nav-bar ul li {
   list-style: none;
   display: inline-flex;
@@ -60,6 +77,8 @@ header {
   font-family: "Manrope", sans-serif;
   color: rgba(140, 48, 245, 1);
   transition: all 0.5s;
+  font-size: medium;
+  font-weight: bold;
 }
 .lista li a:hover {
   color: rgb(26, 22, 22);
@@ -68,6 +87,7 @@ main {
   background-color: rgba(214, 177, 255, 1);
   text-align: center;
   font-family: "Manrope", sans-serif;
+  padding-bottom: 20px;
 }
 .funcion {
   text-align: center;
@@ -141,7 +161,7 @@ button:hover {
 footer {
   background-color: rgba(140, 48, 245, 1);
   width: 100%;
-  height: 150px;
+  height: auto;
   color: rgba(214, 177, 255);
   font-family: "Manrope", sans-serif;
   display: flex;
@@ -254,10 +274,28 @@ footer div h3 {
 
 /* FAQ */
 
+.index {
+  z-index: 100;
+}
+
 .sec-faq div {
   text-align: center;
   font-family: "Manrope", sans-serif;
 }
+.accordion {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.accordion-item {
+  justify-content: center;
+}
+.accordion-button {
+  position: unset;
+  flex-direction: column;
+  background-color: rgba(214, 177, 255, 1);
+  z-index: 50;
+}
+
 .faq {
   font-family: "Manrope", sans-serif;
   padding: 20px;
@@ -280,8 +318,6 @@ footer div h3 {
 textarea {
   resize: none;
 }
-
-
 
 @media (max-width: 576px) {
   .container {
@@ -322,42 +358,37 @@ textarea {
   footer div h3 {
     border-top: 1px solid rgb(239, 199, 247);
   }
-
 }
-
-
 
 #menu,
 #menu-check {
   display: none;
 }
 
-
-
 @media only screen and (max-width: 700px) {
-
   /* PRODUCTOS */
 
-    .seccion-dibujo {
+  .seccion-dibujo {
     padding: 0px;
     display: flex;
     flex-direction: column;
   }
-  .dibujo, .dibujo-1, .dibujo-2, .dibujo-3{
+  .dibujo,
+  .dibujo-1,
+  .dibujo-2,
+  .dibujo-3 {
     display: flex;
     flex-direction: column;
     height: auto;
   }
-
-  header .logo{
-    background-color: rgba(214, 177, 255, 1);
-    padding: 25px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid  rgba(140, 48, 245, 1);
+  .header-FAQ {
+    display: block;
+    top: 0;
+    box-sizing: border-box;
+    position: sticky;
   }
-  header {
+
+  .header-withoutboots {
     width: 100%;
     min-height: 110px;
     display: flex;
@@ -415,7 +446,6 @@ textarea {
 
   #menu-check:checked ~ label #menu-cerrar {
     display: block;
-    
   }
 
   header .menu-hamb .nav-bar {
