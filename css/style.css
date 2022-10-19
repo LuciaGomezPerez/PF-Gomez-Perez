@@ -296,6 +296,7 @@ footer div h3 {
 }
 .accordion-item {
   justify-content: center;
+  background-color: #f0d2ff;
 }
 .accordion-button {
   position: unset;
@@ -303,7 +304,16 @@ footer div h3 {
   background-color: rgba(214, 177, 255, 1);
   z-index: 50;
 }
-
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: rgb(191 143 245);
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+}
 .faq {
   font-family: "Manrope", sans-serif;
   padding: 20px;
@@ -356,7 +366,6 @@ textarea {
     width: auto;
   }
 
-
   .header-FAQ {
     display: block;
     top: 0;
@@ -364,12 +373,12 @@ textarea {
     position: sticky;
   }
 
-    /* ----------CONTACTO---------- */
+  /* ----------CONTACTO---------- */
 
-    .mb-3 {
-      margin-left: 10%;
-      margin-right: 10%;
-    }
+  .mb-3 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 
   /* Para menu hamburguesa de Index-Productos-About */
 
@@ -440,7 +449,6 @@ textarea {
     right: 0;
     width: 100%;
     background-color: transparent;
-    /* padding-top: 1em; */
     padding-bottom: 1em;
     opacity: 0.8;
     font-size: 1.4em;
@@ -513,18 +521,17 @@ textarea {
     border-top: 1px solid rgb(239, 199, 247);
   }
 
-    /* ----------CONTACTO---------- */
+  /* ----------CONTACTO---------- */
 
-    .mb-3 {
-      margin-left: 10%;
-      margin-right: 10%;
-    }
+  .mb-3 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
 /* ----------Media para Mobile pequeño---------- */
 
-@media (max-width: 347px){
-
+@media (max-width: 347px) {
   #menu {
     margin-left: 20px;
     margin-bottom: 20px;
@@ -550,8 +557,11 @@ textarea {
     margin-right: 10%;
   }
 
-/* ----------PRODUCTOS---------- */
-.dibujo-1 div img, .dibujo div img, .dibujo-2 div img, .dibujo-3 div img{
-  width: 70%;
-}
+  /* ----------PRODUCTOS---------- */
+  .dibujo-1 div img,
+  .dibujo div img,
+  .dibujo-2 div img,
+  .dibujo-3 div img {
+    width: 70%;
+  }
 }
