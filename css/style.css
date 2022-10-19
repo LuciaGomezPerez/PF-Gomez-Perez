@@ -34,8 +34,10 @@ body {
   flex-grow: unset;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding-right: 10px;
-  padding-left: 10px;
+  margin-right: 10px;
+  padding-top: 17px;
+  padding-right: 15px;
+  padding-left: 15px;
   font-family: "Manrope", sans-serif;
   color: rgba(140, 48, 245, 1);
   font-weight: bold;
@@ -72,6 +74,7 @@ body {
 }
 .lista li a {
   text-decoration: none;
+  margin-right: 20px;
   padding-right: 10px;
   padding-left: 10px;
   font-family: "Manrope", sans-serif;
@@ -276,8 +279,12 @@ footer div h3 {
 
 .index {
   z-index: 100;
+  min-height: 110px;
 }
-
+.container-fluid{
+  --bs-gutter-x: 0;
+  padding-right: 20px;
+}
 .sec-faq div {
   text-align: center;
   font-family: "Manrope", sans-serif;
@@ -317,6 +324,10 @@ footer div h3 {
 }
 textarea {
   resize: none;
+}
+.mb-3{
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 @media (max-width: 576px) {
