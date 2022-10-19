@@ -196,7 +196,7 @@ footer div h3 {
   border-top: 1px solid rgba(214, 177, 255);
 }
 
-/* PRODUCTOS */
+/* ----------PRODUCTOS---------- */
 
 .main-productos {
   background-color: rgb(247, 228, 255);
@@ -275,13 +275,13 @@ footer div h3 {
   flex-direction: column;
 }
 
-/* FAQ */
+/* ----------FAQ---------- */
 
 .index {
   z-index: 100;
   min-height: 110px;
 }
-.container-fluid{
+.container-fluid {
   --bs-gutter-x: 0;
   padding-right: 20px;
 }
@@ -313,7 +313,7 @@ footer div h3 {
   padding-bottom: 10px;
 }
 
-/* CONTACTO */
+/* ----------CONTACTO---------- */
 
 .contacto {
   text-align: center;
@@ -325,50 +325,9 @@ footer div h3 {
 textarea {
   resize: none;
 }
-.mb-3{
+.mb-3 {
   margin-left: 25%;
   margin-right: 25%;
-}
-
-@media (max-width: 576px) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-      "text-fun-1"
-      "text-fun-2"
-      "text-fun-3";
-  }
-  .ejemplo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    padding: 0px;
-  }
-  .ejemplo-dibujo {
-    padding-bottom: 50px;
-  }
-  .ejemplo-dibujo div p {
-    padding: 10px;
-  }
-
-  .nav-bar ul li {
-    list-style: none;
-    display: flex;
-    text-align: center;
-    font-family: "Manrope", sans-serif;
-    font-weight: bold;
-    color: rgba(140, 48, 245, 1);
-  }
-  .footer-lista li a {
-    display: none;
-  }
-  footer div h3 {
-    border-top: 1px solid rgb(239, 199, 247);
-  }
 }
 
 #menu,
@@ -376,8 +335,10 @@ textarea {
   display: none;
 }
 
-@media only screen and (max-width: 700px) {
-  /* PRODUCTOS */
+/* Media para Tablet */
+
+@media only screen and (max-width: 768px) {
+  /* ----------PRODUCTOS---------- */
 
   .seccion-dibujo {
     padding: 0px;
@@ -391,7 +352,10 @@ textarea {
     display: flex;
     flex-direction: column;
     height: auto;
+    width: auto;
   }
+
+
   .header-FAQ {
     display: block;
     top: 0;
@@ -399,17 +363,21 @@ textarea {
     position: sticky;
   }
 
+  /* Para menu hamburguesa de Index-Productos-About */
+
   .header-withoutboots {
     width: 100%;
     min-height: 110px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    flex-wrap: none;
+    align-items: stretch;
     box-sizing: border-box;
     position: sticky;
     top: 0;
+  }
+  .logo picture img {
+    padding-top: 10px;
   }
   header .menu-ham {
     display: flex;
@@ -474,6 +442,8 @@ textarea {
     font-family: "Manrope", sans-serif;
     color: rgba(140, 48, 245, 1);
     font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 10px;
   }
 
   header .menu-hamb .nav-bar ul,
@@ -488,5 +458,50 @@ textarea {
   }
   #servicios ul li {
     width: 60%;
+  }
+}
+
+/* Media para Mobile */
+
+@media (max-width: 576px) {
+  /* ----------INICIO---------- */
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "text-fun-1"
+      "text-fun-2"
+      "text-fun-3";
+  }
+  .ejemplo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  .ejemplo-dibujo {
+    padding-bottom: 50px;
+  }
+  .ejemplo-dibujo div p {
+    padding: 10px;
+  }
+
+  .nav-bar ul li {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+    color: rgba(140, 48, 245, 1);
+  }
+  .footer-lista li a {
+    display: none;
+  }
+  footer div h3 {
+    border-top: 1px solid rgb(239, 199, 247);
   }
 }
