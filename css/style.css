@@ -91,6 +91,7 @@ main {
   text-align: center;
   font-family: "Manrope", sans-serif;
   padding-bottom: 20px;
+  min-height: 80vh;
 }
 .funcion {
   text-align: center;
@@ -335,7 +336,7 @@ textarea {
   display: none;
 }
 
-/* Media para Tablet */
+/* ----------Media para Tablet---------- */
 
 @media only screen and (max-width: 768px) {
   /* ----------PRODUCTOS---------- */
@@ -362,6 +363,13 @@ textarea {
     box-sizing: border-box;
     position: sticky;
   }
+
+    /* ----------CONTACTO---------- */
+
+    .mb-3 {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
 
   /* Para menu hamburguesa de Index-Productos-About */
 
@@ -432,7 +440,7 @@ textarea {
     right: 0;
     width: 100%;
     background-color: transparent;
-    padding-top: 1em;
+    /* padding-top: 1em; */
     padding-bottom: 1em;
     opacity: 0.8;
     font-size: 1.4em;
@@ -461,7 +469,7 @@ textarea {
   }
 }
 
-/* Media para Mobile */
+/* ----------Media para Mobile---------- */
 
 @media (max-width: 576px) {
   /* ----------INICIO---------- */
@@ -504,4 +512,46 @@ textarea {
   footer div h3 {
     border-top: 1px solid rgb(239, 199, 247);
   }
+
+    /* ----------CONTACTO---------- */
+
+    .mb-3 {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+}
+
+/* ----------Media para Mobile pequeño---------- */
+
+@media (max-width: 347px){
+
+  #menu {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: block;
+    color: rgba(140, 48, 245, 1);
+    background-color: transparent;
+    font-family: "Manrope", sans-serif;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 0.3em;
+    position: relative;
+    left: 0.1rem;
+    right: 0.5em;
+    top: 0;
+    z-index: 9999;
+    transition: all ease 1s;
+  }
+
+  /* ----------CONTACTO---------- */
+  .mb-3 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+/* ----------PRODUCTOS---------- */
+.dibujo-1 div img, .dibujo div img, .dibujo-2 div img, .dibujo-3 div img{
+  width: 70%;
+}
 }
