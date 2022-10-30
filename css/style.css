@@ -10,16 +10,7 @@ body {
 .fondo {
   width: 100%;
 }
-.header-withoutboots {
-  background-color: rgb(247, 228, 255);
-  width: 100%;
-  min-height: 110px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-}
+
 .header-FAQ {
   background-color: rgb(247, 228, 255);
 }
@@ -380,95 +371,6 @@ textarea {
     margin-right: 10%;
   }
 
-  /* Para menu hamburguesa de Index-Productos-About */
-
-  .header-withoutboots {
-    width: 100%;
-    min-height: 110px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: stretch;
-    box-sizing: border-box;
-    position: sticky;
-    top: 0;
-  }
-  .logo picture img {
-    padding-top: 10px;
-  }
-  header .menu-ham {
-    display: flex;
-    place-content: space-between;
-  }
-
-  #menu-check:not(:checked) ~ .nav-bar {
-    display: none;
-  }
-
-  #menu-check:checked ~ .nav-bar {
-    display: block;
-  }
-
-  #menu {
-    display: block;
-    color: rgba(140, 48, 245, 1);
-    background-color: transparent;
-    font-family: "Manrope", sans-serif;
-    padding: 10px;
-    font-size: 2em;
-    font-weight: bold;
-    border-radius: 0.3em;
-    position: absolute;
-    right: 0.5em;
-    top: 0.5em;
-    z-index: 9999;
-    transition: all ease 1s;
-  }
-
-  #menu:hover {
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    font-family: "Manrope", sans-serif;
-  }
-
-  #menu-cerrar {
-    display: none;
-  }
-
-  #menu-check:checked ~ label #menu-abrir {
-    display: none;
-  }
-
-  #menu-check:checked ~ label #menu-cerrar {
-    display: block;
-  }
-
-  header .menu-hamb .nav-bar {
-    top: 70px;
-    right: 0;
-    width: 100%;
-    background-color: transparent;
-    padding-bottom: 1em;
-    opacity: 0.8;
-    font-size: 1.4em;
-  }
-
-  header .menu-hamb .nav-bar ul li a {
-    font-family: "Manrope", sans-serif;
-    color: rgba(140, 48, 245, 1);
-    font-weight: bold;
-    padding-top: 5px;
-    padding-bottom: 10px;
-  }
-
-  header .menu-hamb .nav-bar ul,
-  header .menu-hamb .nav-bar ul li {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-  }
   main {
     text-align: center;
   }
@@ -532,25 +434,6 @@ textarea {
 /* ----------Media para Mobile pequeño---------- */
 
 @media (max-width: 347px) {
-  #menu {
-    margin-left: 20px;
-    margin-bottom: 20px;
-    display: block;
-    color: rgba(140, 48, 245, 1);
-    background-color: transparent;
-    font-family: "Manrope", sans-serif;
-    padding: 10px;
-    font-size: 2em;
-    font-weight: bold;
-    border-radius: 0.3em;
-    position: relative;
-    left: 0.1rem;
-    right: 0.5em;
-    top: 0;
-    z-index: 9999;
-    transition: all ease 1s;
-  }
-
   /* ----------CONTACTO---------- */
   .mb-3 {
     margin-left: 10%;
