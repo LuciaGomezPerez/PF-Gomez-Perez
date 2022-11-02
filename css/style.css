@@ -1,145 +1,49 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+  box-sizing: border-box; }
 
-body {
-  position: relative;
-}
-.fondo {
-  width: 100%;
-}
+.accordion {
+  margin-left: 20%;
+  margin-right: 20%; }
+  .accordion .accordion-item {
+    justify-content: center;
+    background-color: #f0d2ff; }
+    .accordion .accordion-item .accordion-button {
+      position: unset;
+      flex-direction: column;
+      background-color: #d6b1ff;
+      z-index: 50; }
+    .accordion .accordion-item .accordion-button:focus {
+      box-shadow: none; }
+    .accordion .accordion-item .accordion-button:not(.collapsed) {
+      color: black;
+      background-color: #bf8ff5; }
+    .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+      background-image: none; }
 
-.header-FAQ {
-  background-color: rgb(247, 228, 255);
-}
-.nav-bar {
-  display: flex;
-  font-size: 30px;
-  justify-content: end;
-  flex-wrap: nowrap;
-  flex-grow: 2;
-}
-.navbar-collapse {
-  flex-grow: unset;
-}
 .navbar-expand-lg .navbar-nav .nav-link {
+  display: flex;
+  flex-direction: column;
   margin-right: 10px;
   padding-top: 17px;
   padding-right: 15px;
   padding-left: 15px;
   font-family: "Manrope", sans-serif;
-  color: rgba(140, 48, 245, 1);
+  color: #8c30f5;
   font-weight: bold;
-}
-.navbar-nav {
-  align-items: center;
-}
+  text-align: center; }
+  .navbar-expand-lg .navbar-nav .nav-link .container-fluid {
+    display: flex; }
+    .navbar-expand-lg .navbar-nav .nav-link .container-fluid .navbar-collapse {
+      flex-grow: 0; }
+      .navbar-expand-lg .navbar-nav .nav-link .container-fluid .navbar-collapse .nav-item {
+        list-style: none;
+        text-align: center;
+        display: inline-flex; }
 
-.nav-bar ul li {
-  list-style: none;
-  display: inline-flex;
-  text-align: center;
-}
-
-.title-sec {
-  background-image: url("../assets/fondo-nuevo.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  min-height: 174px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.title-sec h1 {
-  font-family: "Pacifico", cursive;
-  font-size: 2.5em;
-  margin: 0px 20px;
-  color: rgb(247, 228, 255);
-  transition: all 1s;
-}
-.title-sec h1:hover {
-  color: chocolate;
-  -webkit-text-stroke: 0.5px black;
-}
-.lista li a {
-  text-decoration: none;
-  margin-right: 20px;
-  padding-right: 10px;
-  padding-left: 10px;
-  font-family: "Manrope", sans-serif;
-  color: rgba(140, 48, 245, 1);
-  transition: all 0.5s;
-  font-size: medium;
-  font-weight: bold;
-}
-.lista li a:hover {
-  color: rgb(26, 22, 22);
-}
-main {
-  background-color: rgba(214, 177, 255, 1);
-  text-align: center;
-  font-family: "Manrope", sans-serif;
-  padding-bottom: 20px;
-  min-height: 80vh;
-}
-.funcion {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-.container {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 1fr;
-  grid-template-areas: ". text-fun-1 text-fun-1 text-fun-2 text-fun-2 text-fun-3 text-fun-3 .";
-}
-.funcion div h2 {
-  padding: 20px;
-  align-items: center;
-  color: rgb(246, 244, 247);
-}
-.text-fun-1 {
-  grid-area: text-fun-1;
-  border-right: 1px solid rgb(239, 199, 247);
-  padding-right: 10px;
-}
-.text-fun-2 {
-  grid-area: text-fun-2;
-  border-right: 1px solid rgb(239, 199, 247);
-  padding: 0px 10px;
-}
-.text-fun-3 {
-  grid-area: text-fun-3;
-  padding-left: 10px;
-}
-.producto {
-  display: flex;
-  flex-direction: column;
-}
-.producto h2 {
-  margin-top: 20px;
-  text-align: center;
-  color: white;
-}
-.ejemplo {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-  padding: 20px;
-}
-.ejemplo-dibujo {
-  margin: 0px 20px;
-}
-.ejemplo-dibujo div img {
-  transition: all 0.5s;
-}
-.ejemplo-dibujo div img:hover {
-  transform: scale(1.1, 1.1);
-}
-button {
-  background-color: rgba(140, 48, 245, 1);
+.ejemplo button {
+  background-color: #8c30f5;
   border: 1.5px solid transparent;
   padding: 10px;
   padding-left: 30px;
@@ -147,304 +51,231 @@ button {
   margin-bottom: 5px;
   color: white;
   border-radius: 10px;
-  transition: all 0.5s;
-}
-button:hover {
-  border-color: rgb(45, 31, 49);
-  color: black;
-}
+  transition: all 0.5s; }
+
+.ejemplo :hover {
+  border-color: #2d1f31;
+  color: black; }
+
+.header-FAQ {
+  background-color: #f7e4ff; }
+
+.main-productos {
+  background-color: #f7e4ff; }
+  .main-productos .seccion-dibujo {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto; }
+    .main-productos .seccion-dibujo .dibujo {
+      grid-column: 1;
+      grid-row: 1;
+      background-color: #ffb1e6;
+      height: auto;
+      border: 1px solid chocolate;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 1%;
+      backdrop-filter: blur 10px;
+      display: flex;
+      flex-direction: column; }
+    .main-productos .seccion-dibujo .dibujo-1 {
+      grid-column: 2;
+      grid-row: 2;
+      background-color: #ff72d2;
+      height: auto;
+      border: 1px solid chocolate;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 1%;
+      backdrop-filter: blur 10px;
+      display: flex;
+      flex-direction: column; }
+    .main-productos .seccion-dibujo .dibujo-2 {
+      grid-column: 1;
+      grid-row: 3;
+      background-color: #f22bb2;
+      height: auto;
+      border: 1px solid chocolate;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 1%;
+      backdrop-filter: blur 10px;
+      display: flex;
+      flex-direction: column; }
+    .main-productos .seccion-dibujo .dibujo-3 {
+      grid-column: 2;
+      grid-row: 4;
+      background-color: #a7267e;
+      height: auto;
+      border: 1px solid chocolate;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 1%;
+      backdrop-filter: blur 10px;
+      display: flex;
+      flex-direction: column; }
+
+main {
+  background-color: #d6b1ff;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  padding-bottom: 20px;
+  min-height: 80vh; }
+  main .title-sec {
+    background-image: url("../assets/fondo-nuevo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 174px;
+    display: flex;
+    flex-direction: none;
+    justify-content: flex-end;
+    align-items: center; }
+    main .title-sec h1 {
+      font-family: "Pacifico", cursive;
+      font-size: 2.5em;
+      margin: 0px 20px;
+      color: #f7e4ff;
+      transition: all 1s; }
+    main .title-sec :hover {
+      color: chocolate;
+      -webkit-text-stroke: 0.5px black; }
+  main .funcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    justify-items: none;
+    list-style: none;
+    text-align: center;
+    text-decoration: none; }
+    main .funcion h2 {
+      padding: 20px;
+      align-items: center;
+      color: #f6f4f7; }
+    main .funcion .container {
+      display: flex; }
+      main .funcion .container .text-fun-1 {
+        border-right: 1px solid #efc7f7;
+        padding-right: 10px; }
+      main .funcion .container .text-fun-2 {
+        border-right: 1px solid #efc7f7;
+        padding: 0px 10px; }
+      main .funcion .container .text-fun-3 {
+        padding-left: 10px; }
+  main .producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: none; }
+    main .producto h2 {
+      margin-top: 20px;
+      text-align: center;
+      color: white; }
+    main .producto .ejemplo {
+      display: flex;
+      flex-direction: none;
+      justify-content: center;
+      align-items: none;
+      margin: 20px;
+      padding: 20px; }
+      main .producto .ejemplo .ejemplo-dibujo {
+        margin: 0px 20px; }
+        main .producto .ejemplo .ejemplo-dibujo img {
+          transition: all 0.5s; }
+        main .producto .ejemplo .ejemplo-dibujo img:hover {
+          transform: scale(1.1, 1.1); }
+
 footer {
-  background-color: rgba(140, 48, 245, 1);
+  background-color: #8c30f5;
   width: 100%;
   height: auto;
-  color: rgba(214, 177, 255);
+  color: #d6b1ff;
   font-family: "Manrope", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-}
-.redes {
-  display: flex;
-  padding-bottom: 10px;
-}
-.redes div a img {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-footer div h3 {
-  padding: 10px;
-}
-.footer-lista {
-  display: flex;
-  list-style: none;
-  text-align: center;
-}
-.footer-lista li a {
-  text-decoration: none;
-  padding-right: 50px;
-  padding-left: 50px;
-  color: white;
-  border-top: 1px solid rgba(214, 177, 255);
-}
-
-/* ----------PRODUCTOS---------- */
-
-.main-productos {
-  background-color: rgb(247, 228, 255);
-}
-
-.seccion-dibujo {
-  grid-gap: 1rem;
-  padding: 10px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-}
-.dibujo {
-  background-color: rgb(255, 177, 230);
-  height: auto;
-  border: 1px solid chocolate;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 1%;
-  backdrop-filter: blur (10px);
-  grid-column: 1/3;
-  grid-row: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.dibujo h3 {
-  font-family: "Manrope", sans-serif;
-}
-.dibujo p {
-  font-family: "Manrope", sans-serif;
-}
-.text-dibujo {
-  display: flex;
-  flex-direction: column;
-}
-.dibujo-1 {
-  background-color: rgb(255, 114, 210);
-  height: auto;
-  border: 1px solid chocolate;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 1%;
-  backdrop-filter: blur (10px);
-  grid-column: 3/5;
-  grid-row: 2;
-  display: flex;
-  flex-direction: column;
-}
-
-.dibujo-2 {
-  background-color: rgb(242, 43, 178);
-  height: auto;
-  border: 1px solid chocolate;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 1%;
-  backdrop-filter: blur (10px);
-  grid-column: 1/3;
-  grid-row: 3;
-  display: flex;
-  flex-direction: column;
-}
-
-.dibujo-3 {
-  background-color: rgb(167, 38, 126);
-  height: auto;
-  border: 1px solid chocolate;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 1%;
-  backdrop-filter: blur (10px);
-  grid-column: 3/5;
-  grid-row: 4;
-  display: flex;
-  flex-direction: column;
-}
-
-/* ----------FAQ---------- */
-
-.index {
-  z-index: 100;
-  min-height: 110px;
-}
-.container-fluid {
-  --bs-gutter-x: 0;
-  padding-right: 20px;
-}
-.sec-faq div {
-  text-align: center;
-  font-family: "Manrope", sans-serif;
-}
-.accordion {
-  margin-left: 20%;
-  margin-right: 20%;
-}
-.accordion-item {
-  justify-content: center;
-  background-color: #f0d2ff;
-}
-.accordion-button {
-  position: unset;
-  flex-direction: column;
-  background-color: rgba(214, 177, 255, 1);
-  z-index: 50;
-}
-.accordion-button:focus {
-  box-shadow: none;
-}
-.accordion-button:not(.collapsed) {
-  color: black;
-  background-color: rgb(191 143 245);
-}
-.accordion-button:not(.collapsed)::after {
-  background-image: none;
-}
-.faq {
-  font-family: "Manrope", sans-serif;
-  padding: 20px;
-  text-align: center;
-  color: rgb(96, 34, 167);
-}
-.faq h3 {
-  padding-bottom: 10px;
-}
-
-/* ----------CONTACTO---------- */
-
-.contacto {
-  text-align: center;
-  font-family: "Manrope", sans-serif;
-}
-.input-text {
-  padding-right: 284px;
-}
-textarea {
-  resize: none;
-}
-.mb-3 {
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-#menu,
-#menu-check {
-  display: none;
-}
-
-/* ----------Media para Tablet---------- */
-
-@media only screen and (max-width: 768px) {
-  /* ----------PRODUCTOS---------- */
-
-  .seccion-dibujo {
-    padding: 0px;
+  padding: 20px; }
+  footer .redes {
     display: flex;
-    flex-direction: column;
-  }
-  .dibujo,
-  .dibujo-1,
-  .dibujo-2,
-  .dibujo-3 {
+    padding-bottom: 10px; }
+    footer .redes img {
+      padding-left: 20px;
+      padding-right: 20px; }
+  footer h3 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px; }
+  footer .footer-lista {
+    padding-left: 0;
     display: flex;
-    flex-direction: column;
-    height: auto;
-    width: auto;
-  }
+    list-style: none;
+    text-align: center;
+    border-top: 1px solid #d6b1ff;
+    align-items: center; }
+    footer .footer-lista li {
+      display: flex;
+      list-style: none;
+      text-align: center;
+      text-decoration: none; }
+      footer .footer-lista li a {
+        display: flex;
+        text-decoration: none;
+        padding-right: 20px;
+        padding-left: 20px;
+        color: white; }
 
+@media (max-width: 768px) {
   .header-FAQ {
     display: block;
     top: 0;
     box-sizing: border-box;
-    position: sticky;
-  }
-
-  /* ----------CONTACTO---------- */
-
-  .mb-3 {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  main {
-    text-align: center;
-  }
-  #servicios ul li {
-    width: 60%;
-  }
-}
-
-/* ----------Media para Mobile---------- */
+    position: sticky; }
+  .main-productos {
+    background-color: #f7e4ff; }
+    .main-productos .seccion-dibujo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
 
 @media (max-width: 576px) {
   /* ----------INICIO---------- */
-
   .container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-      "text-fun-1"
-      "text-fun-2"
-      "text-fun-3";
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: none; }
   .ejemplo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0px;
-    padding: 0px;
-  }
-  .ejemplo-dibujo {
-    padding-bottom: 50px;
-  }
-  .ejemplo-dibujo div p {
-    padding: 10px;
-  }
-
-  .nav-bar ul li {
-    list-style: none;
+    padding: 0px; }
+    .ejemplo .ejemplo-dibujo {
+      padding-bottom: 50px; }
+      .ejemplo .ejemplo-dibujo p {
+        padding: 10px; }
+  .main-productos {
+    background-color: #f7e4ff; }
+    .main-productos .seccion-dibujo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+  .footer-lista {
     display: flex;
+    flex-direction: column;
+    justify-content: none;
+    justify-items: center;
+    list-style: none;
     text-align: center;
-    font-family: "Manrope", sans-serif;
-    font-weight: bold;
-    color: rgba(140, 48, 245, 1);
-  }
-  .footer-lista li a {
-    display: none;
-  }
-  footer div h3 {
-    border-top: 1px solid rgb(239, 199, 247);
-  }
-
-  /* ----------CONTACTO---------- */
-
-  .mb-3 {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-
-/* ----------Media para Mobile pequeño---------- */
-
-@media (max-width: 347px) {
-  /* ----------CONTACTO---------- */
-  .mb-3 {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  /* ----------PRODUCTOS---------- */
-  .dibujo-1 div img,
-  .dibujo div img,
-  .dibujo-2 div img,
-  .dibujo-3 div img {
-    width: 70%;
-  }
-}
+    text-decoration: none; }
+    .footer-lista li {
+      display: flex;
+      flex-direction: column;
+      justify-content: none;
+      justify-items: center;
+      list-style: none;
+      text-align: center;
+      text-decoration: none; } }

@@ -1,0 +1,35 @@
+@mixin grid-s ( $columns, $row) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: $row;
+}
+@mixin grid ( $grid-column, $grid-row) {
+    grid-column: $grid-column;
+    grid-row: $grid-row;
+}
+@mixin prop-flex ($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin prop-footer ( $flex-direction, $justify-content, $justify-items, $list-style, $text-align, $text-decoration){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    justify-items: $justify-items;
+    list-style: $list-style;
+    text-align: $text-align;
+    text-decoration: $text-decoration;
+}
+@mixin prop-productos ( $bc, $height, $border, $margin, $padding, $border-radius, $backdrop-filter) {
+    background-color: $bc;
+    height: $height;
+    border: $border;
+    margin: $margin;
+    padding: $padding;
+    border-radius: $border-radius;
+    backdrop-filter: $backdrop-filter;
+    display: flex;
+    flex-direction: column;
+}

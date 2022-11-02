@@ -1,0 +1,17 @@
+.ejemplo{
+    button {
+        background-color: $background-color-2;
+        border: 1.5px solid transparent;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 5px;
+        color: white;
+        border-radius: 10px;
+        transition: all 0.5s;
+    }
+    :hover {
+        border-color: rgb(45, 31, 49);
+        color: $primary-color-2;
+    }
+}

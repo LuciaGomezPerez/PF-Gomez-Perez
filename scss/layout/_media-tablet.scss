@@ -1,0 +1,15 @@
+
+@media (max-width:768px){
+    .header-FAQ{
+        display: block;
+        top: 0;
+        box-sizing: border-box;
+        position: sticky;
+    }
+    .main-productos{
+        background-color: rgb(247, 228, 255);
+    .seccion-dibujo {
+        @include prop-flex (column, center, center);
+    }
+}
+}

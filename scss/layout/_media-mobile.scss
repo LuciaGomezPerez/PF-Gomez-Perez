@@ -1,0 +1,31 @@
+@media (max-width: 576px) {
+    /* ----------INICIO---------- */
+
+    .container {
+    @include prop-flex (column, none, none);
+    }
+    .ejemplo {
+    @include prop-flex (column, center, center);
+    margin: 0px;
+    padding: 0px;
+    .ejemplo-dibujo {
+        padding-bottom: 50px;
+        p {
+            padding: 10px;
+        }
+    }
+    }
+    .main-productos{
+        background-color: $background-color;
+    .seccion-dibujo {
+        @include prop-flex (column, center, center);
+    }
+    
+}
+.footer-lista{
+    @include prop-footer (column, none, center, none, center,none);
+    li {
+        @include prop-footer (column, none, center, none, center, none);
+    }
+}
+}
