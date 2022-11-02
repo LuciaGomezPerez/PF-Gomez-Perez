@@ -53,15 +53,14 @@ h2 {
         text-align: center;
         display: inline-flex; }
 
-.contacto .container-fluid .input-text {
-  padding-right: 284px; }
-
-.contacto .container-fluid textarea {
-  resize: none; }
-
-.contacto .container-fluid .mb-3 {
-  margin-left: 25%;
-  margin-right: 25%; }
+.contacto .container {
+  display: block;
+  padding-left: 15%;
+  padding-right: 15%; }
+  .contacto .container .form-control {
+    width: 100%; }
+  .contacto .container textarea {
+    resize: none; }
 
 .ejemplo button {
   background-color: #8c30f5;
@@ -318,6 +317,9 @@ footer {
       flex-direction: column;
       justify-content: center;
       align-items: center; }
+      .main-productos .seccion-dibujo .icon {
+        width: 70%;
+        object-fit: cover; }
   .footer-lista {
     display: flex;
     flex-direction: column;

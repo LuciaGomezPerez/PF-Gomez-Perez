@@ -50,18 +50,16 @@
 }
 // Formulario de Contacto
 .contacto{
-    .container-fluid{
-        .input-text {
-            padding-right: 284px;
+    .container{
+        display: block;
+        padding-left: 15%;
+        padding-right: 15%;
+        .form-control{
+            width: 100%;
         }
         textarea {
         resize: none;
         }
-        .mb-3 {
-            margin-left: 25%;
-            margin-right: 25%;
-        }
     }
-
 }
 

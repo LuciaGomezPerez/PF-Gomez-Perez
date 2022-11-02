@@ -31,6 +31,10 @@
         background-color: $background-color;
     .seccion-dibujo {
         @include prop-flex (column, center, center);
+        .icon{
+            width: 70%;
+            object-fit: cover;
+        }
     }
     
 }
