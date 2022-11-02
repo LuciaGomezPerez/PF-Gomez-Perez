@@ -1,6 +1,8 @@
+// Acordion de FAQ
 .accordion {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
     .accordion-item {
         justify-content: center;
         background-color: #f0d2ff;
@@ -22,6 +24,7 @@
         }
     }
 }
+// Barra de navegacion
 .navbar-expand-lg .navbar-nav .nav-link {
     display: flex;
     flex-direction: column;
@@ -44,5 +47,21 @@
             }
         }
     }
+}
+// Formulario de Contacto
+.contacto{
+    .container-fluid{
+        .input-text {
+            padding-right: 284px;
+        }
+        textarea {
+        resize: none;
+        }
+        .mb-3 {
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+    }
+
 }
 

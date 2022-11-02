@@ -1,9 +1,21 @@
 @media (max-width: 576px) {
     /* ----------INICIO---------- */
-
+    main{
+.funcion{
     .container {
     @include prop-flex (column, none, none);
+    .text-fun-1 {
+        @include prop-text (none, 10px, none, none);
     }
+    .text-fun-2 {
+        @include prop-text (none, none, 0px 10px, none);
+    }
+    .text-fun-3 {
+        @include prop-text (none, none, none, 10px);
+    }
+    }
+}
+}
     .ejemplo {
     @include prop-flex (column, center, center);
     margin: 0px;

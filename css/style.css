@@ -3,9 +3,20 @@
   padding: 0;
   box-sizing: border-box; }
 
+* {
+  font-family: "Manrope", sans-serif; }
+
+h1 {
+  font-family: "Pacifico", cursive; }
+
+h2 {
+  color: #f6e1fc;
+  padding: 20px; }
+
 .accordion {
-  margin-left: 20%;
-  margin-right: 20%; }
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%; }
   .accordion .accordion-item {
     justify-content: center;
     background-color: #f0d2ff; }
@@ -42,6 +53,16 @@
         text-align: center;
         display: inline-flex; }
 
+.contacto .container-fluid .input-text {
+  padding-right: 284px; }
+
+.contacto .container-fluid textarea {
+  resize: none; }
+
+.contacto .container-fluid .mb-3 {
+  margin-left: 25%;
+  margin-right: 25%; }
+
 .ejemplo button {
   background-color: #8c30f5;
   border: 1.5px solid transparent;
@@ -56,6 +77,17 @@
 .ejemplo :hover {
   border-color: #2d1f31;
   color: black; }
+
+button {
+  background-color: #8c30f5;
+  border: 1.5px solid transparent;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 5px;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.5s; }
 
 .header-FAQ {
   background-color: #f7e4ff; }
@@ -119,7 +151,6 @@
 main {
   background-color: #d6b1ff;
   text-align: center;
-  font-family: "Manrope", sans-serif;
   padding-bottom: 20px;
   min-height: 80vh; }
   main .title-sec {
@@ -132,7 +163,6 @@ main {
     justify-content: flex-end;
     align-items: center; }
     main .title-sec h1 {
-      font-family: "Pacifico", cursive;
       font-size: 2.5em;
       margin: 0px 20px;
       color: #f7e4ff;
@@ -153,14 +183,23 @@ main {
       align-items: center;
       color: #f6f4f7; }
     main .funcion .container {
-      display: flex; }
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto; }
       main .funcion .container .text-fun-1 {
         border-right: 1px solid #efc7f7;
-        padding-right: 10px; }
+        padding-right: 10px;
+        padding: none;
+        padding-left: none; }
       main .funcion .container .text-fun-2 {
         border-right: 1px solid #efc7f7;
-        padding: 0px 10px; }
+        padding-right: none;
+        padding: 0px 10px;
+        padding-left: none; }
       main .funcion .container .text-fun-3 {
+        border-right: none;
+        padding-right: none;
+        padding: none;
         padding-left: 10px; }
   main .producto {
     display: flex;
@@ -184,13 +223,14 @@ main {
           transition: all 0.5s; }
         main .producto .ejemplo .ejemplo-dibujo img:hover {
           transform: scale(1.1, 1.1); }
+  main p {
+    font-size: 1.1em; }
 
 footer {
   background-color: #8c30f5;
   width: 100%;
   height: auto;
   color: #d6b1ff;
-  font-family: "Manrope", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -240,11 +280,26 @@ footer {
 
 @media (max-width: 576px) {
   /* ----------INICIO---------- */
-  .container {
+  main .funcion .container {
     display: flex;
     flex-direction: column;
     justify-content: none;
     align-items: none; }
+    main .funcion .container .text-fun-1 {
+      border-right: none;
+      padding-right: 10px;
+      padding: none;
+      padding-left: none; }
+    main .funcion .container .text-fun-2 {
+      border-right: none;
+      padding-right: none;
+      padding: 0px 10px;
+      padding-left: none; }
+    main .funcion .container .text-fun-3 {
+      border-right: none;
+      padding-right: none;
+      padding: none;
+      padding-left: 10px; }
   .ejemplo {
     display: flex;
     flex-direction: column;

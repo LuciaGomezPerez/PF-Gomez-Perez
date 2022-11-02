@@ -1,7 +1,6 @@
 main{
     background-color: rgba(214, 177, 255, 1);
     text-align: center;
-    font-family: "Manrope", sans-serif;
     padding-bottom: 20px;
     min-height: 80vh;
     .title-sec {
@@ -11,7 +10,6 @@ main{
         min-height: 174px;
         @include prop-flex (none, flex-end, center);
         h1 {
-            font-family: "Pacifico", cursive;
             font-size: 2.5em;
             margin: 0px 20px;
             color: rgb(247, 228, 255);
@@ -30,17 +28,15 @@ main{
             color: rgb(246, 244, 247);
         }
         .container {
-            display: flex;
+            @include grid-s(3,auto);
             .text-fun-1 {
-                border-right: 1px solid rgb(239, 199, 247);
-                padding-right: 10px;
+                @include prop-text (1px solid rgb(239, 199, 247), 10px, none, none);
             }
             .text-fun-2 {
-                border-right: 1px solid rgb(239, 199, 247);
-                padding: 0px 10px;
+                @include prop-text (1px solid rgb(239, 199, 247), none, 0px 10px, none);
             }
             .text-fun-3 {
-                padding-left: 10px;
+                @include prop-text (none, none, none, 10px);
             }
         }
     }
@@ -65,5 +61,8 @@ main{
                 }
             }
         }
+    }
+    p{
+        font-size: 1.1em;
     }
 }
