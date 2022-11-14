@@ -9,16 +9,6 @@ main{
         background-size: 100% 100%;
         min-height: 174px;
         @include prop-flex (none, flex-end, center);
-        h1 {
-            font-size: 2.5em;
-            margin: 0px 20px;
-            color: rgb(247, 228, 255);
-            transition: all 1s;
-        }
-        :hover {
-            color: chocolate;
-            -webkit-text-stroke: 0.5px black;
-        }
     }
     .funcion{
         @include prop-footer (column, none, none, none, center, none);

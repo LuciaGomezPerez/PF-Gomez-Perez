@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;800&family=Pacifico&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +7,17 @@
 * {
   font-family: "Manrope", sans-serif; }
 
-h1 {
-  font-family: "Pacifico", cursive; }
+.title-sec h1 {
+  font-family: "Pacifico", cursive;
+  -webkit-text-stroke: 0.5px #d481fa;
+  font-size: 2.5em;
+  margin: 0px 20px;
+  color: #e4a6ff;
+  transition: all 1s; }
+
+.title-sec :hover {
+  color: chocolate;
+  -webkit-text-stroke: 0.5px black; }
 
 h2 {
   color: #f6e1fc;
@@ -161,14 +171,6 @@ main {
     flex-direction: none;
     justify-content: flex-end;
     align-items: center; }
-    main .title-sec h1 {
-      font-size: 2.5em;
-      margin: 0px 20px;
-      color: #f7e4ff;
-      transition: all 1s; }
-    main .title-sec :hover {
-      color: chocolate;
-      -webkit-text-stroke: 0.5px black; }
   main .funcion {
     display: flex;
     flex-direction: column;

@@ -1,9 +1,20 @@
 *{
     font-family: "Manrope", sans-serif; 
     }
-h1{
-    font-family: "Pacifico", cursive;
-}
+    .title-sec{
+            h1 {
+                font-family: "Pacifico", cursive;
+                -webkit-text-stroke: 0.5px rgb(212, 129, 250);
+                font-size: 2.5em;
+                margin: 0px 20px;
+                color: rgb(228, 166, 255);
+                transition: all 1s;
+            }
+            :hover {
+                color: chocolate;
+                -webkit-text-stroke: 0.5px black;
+            }
+        }
 h2{
     color: rgb(246, 225, 252);
     padding: 20px;
